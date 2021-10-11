@@ -1,3 +1,6 @@
+
+
+
 @keyframes pisca {
     0% { opacity:0.2; }
     50% { opacity:1; }
@@ -13,7 +16,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
+#container{
+    flex-direction: column;
+    display:flex;
+}
+
 
 .urna {
     background-color: #dbd5c9;
@@ -117,11 +127,13 @@ body{
 
 .d1-3{
     height: 50px;
+    display:flex;
     
 }
 
 .numero{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 30px;
     height: 40px;
     border: 1px solid black;
@@ -171,4 +183,71 @@ font-size: 12px;
     border-top: 2px solid #5555;
     padding-left: 10px;
     line-height: 18px;
+}
+
+.voltar{
+    flex-direction: column;
+}
+
+#outras{
+    
+    padding: 10px;
+    display: flex;
+    justify-content:space-between
+    
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+/*===============votação.html==================*/
+
+#votacao{
+   border: #000 solid 1px;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 10px;
+   background-color: gray;
+   
+}
+
+#votacao:hover{
+    background-color: #48C079;
+}
+
+/*=============================================*/
+
+/*===============candidatos.html==================*/
+
+#candidatos{
+   
+    font: Andale Mono, monospace;
+    border: #000 solid 1px;  
+    background-color: gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#candidatos:hover{
+    background-color: #48C079;
+}
+
+/*=============================================*/
+
+
+
+.avisoG{
+    font-size:40px;
+    padding: 10px;
+}
+.aviso-fim{
+  font-size: 70px;
+  font-weight: bold;
+  flex: 1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
 }
